@@ -8,3 +8,8 @@
 2. 确定目标系统
    - Linux： 应用程序普遍支持 Ubuntu，那就安装目前最新版本 Ubuntu 22.04.2 LTS。
    - Windows： 目前最高版本是 Windows 11，但本人不太喜欢，所以选择 Windows 10。
+3. 安装 Ubuntu
+   - _备注： 先安装 Linux 的话电脑启动时会默认引导 Linux，方便一些_。
+   - 备份电脑中重要的资料。
+   - 下载[官方镜像](https://ubuntu.com/download/desktop)。
+   - 按照[官方安装教程](https://ubuntu.com/tutorials/install-ubuntu-desktop)进行操作。
