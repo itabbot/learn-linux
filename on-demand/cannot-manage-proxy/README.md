@@ -28,7 +28,7 @@ current_mode=$(gsettings get org.gnome.system.proxy mode)
 # 快捷方式配置文件路径
 desktop_file="/home/itabbot/.local/share/applications/proxy-toggle.desktop"
 
-# 如果未开启VPN
+# 如果未开启代理
 if [[ "$current_mode" == *"none"* ]]; then
     # 更新图标
     sed -i "s/^Icon=.*/Icon=network-vpn/" "$desktop_file"
@@ -39,7 +39,7 @@ if [[ "$current_mode" == *"none"* ]]; then
     # 启动系统代理
     gsettings set org.gnome.system.proxy mode 'manual'
 
-# 如果已经开启VPN
+# 如果已经开启代理
 else
     # 更新图标
     sed -i "s/^Icon=.*/Icon=network-vpn-disabled/" "$desktop_file"
